@@ -15,7 +15,6 @@ return (<div>
 const MyName=()=>{
 return(<div>
  <p>My name is Sudha</p>
-
 </div>)
 }
 
