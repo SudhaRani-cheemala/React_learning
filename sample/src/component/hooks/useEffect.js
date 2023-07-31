@@ -32,3 +32,13 @@ const UseEffect = () => {
 };
 
 export default UseEffect;
+
+
+// const getData = () => {
+//   axios.get('url')
+// }
+
+
+// const useEffect = (()=>{
+//    getData();
+// })

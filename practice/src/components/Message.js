@@ -10,9 +10,7 @@ import React, { Component } from "react";
       }
       changeMessage(){
         this.setState({
-
                 message:"Thank you for subscribing"
-
         })
       }
 

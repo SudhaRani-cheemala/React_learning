@@ -4,6 +4,12 @@ import Mycomponent  from './components/greet'
 import Welcome from './components/Welcome'
 import Message from './components/Message'
 import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick'
+import ClassClick from './components/ClassClick'
+import Eventbind from './components/Eventbind'
+import ParentComponent from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting'
+import List from './components/List'
 const App = () => {
   return (
     <div className='App'>
@@ -26,6 +32,12 @@ const App = () => {
         <p>This is children prop</p>
         <Message/>
         <Counter/> 
+        <FunctionClick/>
+        <ClassClick/>
+        <Eventbind/>
+        <ParentComponent/>
+        <UserGreeting/>
+        <List/>
 
     </div>
   )
