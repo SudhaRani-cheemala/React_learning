@@ -10,10 +10,15 @@ import Eventbind from './components/Eventbind'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import List from './components/List'
+import NameList from './components/NameList'
+import Stylesheet from './components/stylesheet'
+import Inline from '/components/Inline.js'
+
+
 const App = () => {
   return (
     <div className='App'>
-        <Mycomponent name="Bruce" heroname="BATSMAN">
+        {/* <Mycomponent name="Bruce" heroname="BATSMAN">
           <p>This is children prop</p>
         </Mycomponent>
         <Mycomponent name="clark" heroname="spiderman">
@@ -30,15 +35,17 @@ const App = () => {
         </Hello>
         <Welcome name="Smith" wish="Good Morning"/>
         <p>This is children prop</p>
-        <Message/>
-        <Counter/> 
+        <Message/> */}
+        {/* <Counter/> 
         <FunctionClick/>
         <ClassClick/>
         <Eventbind/>
         <ParentComponent/>
         <UserGreeting/>
         <List/>
-
+        <NameList/> */}
+        <Stylesheet primary={true}/>
+        <Inline/>
     </div>
   )
 }
