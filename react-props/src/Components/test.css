@@ -1,0 +1,15 @@
+.btn-color{
+    background-color: blue;
+}
+
+.font-color{
+    color: red;
+}
+.ul{
+   list-style-type: none;
+   display: flex;
+   gap:20px;
+   background-color: blue;
+   padding: 20px;
+   color:#fff
+}
