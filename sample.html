@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <body>
+        <title>Cart Quantity</title>
+        <h1>Shopping</h1>
+        <button class="red-color" onclick="console.log(`cartQuantity:${cartQuantity}`);">Show quantity</button>
+        <button class="red-color" onclick="cartQuantity=cartQuantity+1;console.log(`cartQuantity=${cartQuantity}`)"
+      >Add to cart</button>
+        <button class="red-color" onclick="cartQuantity=cartQuantity+2;console.log(`cartQuantity:${cartQuantity}`);">+2</button>
+        <button class="red-color" onclick="cartQuantity=cartQuantity+3;console.log(`cartQuantity:${cartQuantity}`)">+3</button>
+        <script>
+            let cartQuantity=0;
+            const variable2=10;
+        </script>
+    </body>
+</head>
+<style>
+    .red-color{
+        background-color: red;
+        color: white;
+        border: none;
+    }
+</style>
+</html>
