@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Amazon Shopping Cart
+    </title>
+    <h1>
+        Amazon Shopping Calculator
+    </h1>
+</head>
+    <p>Order Under</p>
+    <p>Order Over</p>
+   <input type="text" placeholder="Cost of Order" class="js-cost-input"></input>
+   <button onclick=" calculateTotal()">Calculate</button>
+   <p class="js-total-cost"></p>
+    </html>
+    <body>
+        <script>
+         function calculateTotal()
+         {
+            const inputElement=document.querySelector('.js-cost-input')
+            const cost=inputElement.value;
+            if(cost<40){
+                cost=cost+10;
+            }
+            document.querySelector('.js-total-cost').innerHTML=`$${cost}`;
+            window.alert
+
+         }
+        </script>
+    </body>
+</html>

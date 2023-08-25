@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <title>Objects exercise</title>
+        <head>
+            <h1>Objects</h1>
+        </head>
+        <button onclick="Prod()"> Click</button>
+      
+    <script>
+       function Prod(){
+        const product={
+            product1:'basket ball',
+            price:3000
+        }
+         product['delivery-time']="3days";
+         console.log(product)
+        console.log(product.price+500)
+        console.log(JSON.stringify(product))
+       };
+
+       function Price(prod1, prod2) {
+  if (prod1.price < prod2.price) {
+    return prod1;
+  } else {
+    return prod2;
+  }
+}
+
+// Create two products
+const product1 = {
+  name: "Product A",
+  price: 25
+};
+
+const product2 = {
+  name: "Product B",
+  price: 15
+};
+
+// Use the Price function to determine the cheaper product
+const cheaperProduct = Price(product1, product2);
+
+console.log("The cheaper product is:", cheaperProduct.name);
+
+    </script>
+</html>

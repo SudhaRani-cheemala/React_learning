@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <title>Dom Projects</title>
+    <head>
+        <h1>Dom Projects</h1>
+        <style>
+            .subscibe-button{
+                border: none;
+                background-color: black;
+                color:white;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-weight: bold;
+                height: 35px;
+                width: 100px;
+                border-radius: 17.5px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <p>YouTube Subscribe Button</p>
+        <button onClick=" subscibe()
+        "
+        class="js-subscribe-button subscibe-button">Subscribe</button>
+        <script>
+         function subscibe(){
+            const buttonElement=document.querySelector('.js-subscribe-button'); 
+        if(buttonElement.innerHTML==='Subscribe'){
+            buttonElement.innerHTML='Subscibed';
+
+        }else{
+            buttonElement.innerHTML='Subscribe';
+        }
+         }
+
+        </script>
+    </body>
+</html>
