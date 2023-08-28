@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Advanced functions
+    </title>
+    <head>
+        <p>Advanced Functions</p>
+        <button onclick="" class="js-button">Click</button>
+<style>
+
+</style>
+    </head>
+    <body>
+      <script>
+       const func=eventFunction=(param)=>{
+        console.log("eventFunctoon----------->",param*10)
+       }
+       eventFunction(80);
+        // addEventListener let us run some code when  we interact with eleemnt
+        // remove eventListener .removeEventListener()
+        const buttonElement=document.querySelector('.js-button');
+        const eventListener=()=>{
+            console.log('click')
+        }
+        buttonElement.addEventListener('click',eventListener);
+        buttonElement.removeEventListener('click',eventListener);
+        buttonElement.addEventListener('click',()=>{
+            console.log('click2')
+        });
+        buttonElement.addEventListener('keydown',(event)=>{
+            if(event.key==='r'){
+                eventFunction()
+            }
+            else{
+                console.log("event Keydown")
+            }
+
+        })
+        
+        // console.log(fun)
+        // // saving value in an object
+        // const Obj1={
+        //     num1:2,
+        //     fun:function greet(){
+        //         console.log("hello2222");
+        //     }
+
+        // }
+        // Obj1.fun();
+        // function display(param){
+        //      console.log(param)
+        // }
+        // display(423545);
+        // function run(param){
+        //     param()
+        // }
+
+        // run(function(){
+        //     console.log("hello function")
+        // });
+        // here we are mentioning the time in milliseconds which indicates how long  to wait before running this function
+        // 1000 milliseconds=1 sec
+        // setTimeout is asynchronous function
+       setTimeout(function(){
+        console.log('timeout');
+        console.log("timwout 22222");
+       },3000);
+       console.log("next line")
+    //    set interval will run the function three seconds in the future
+       setInterval(function(){
+          console.log("fsdfsgdfsg")
+        //   it keep running the function every 3 seconds
+       },3000)
+       console.log("interval8746526576275");
+
+       const regularFunction=function(param){
+        console.log("regular functions----------------->")
+        return 5;
+       };
+    //    Arrow functions mostly works same as normal function
+       const arrowFunction=(param,param2)=>{
+        console.log("arrow function---------------->");
+        return 5;
+       };
+       arrowFunction();
+       const oneParam=param=>{
+        console.log("oneParam------------>",param+1);
+
+       };
+       oneParam(5);
+       const oneLine=()=> 2+3;
+       console.log(oneLine());
+
+       const object={
+        method:()=>{
+
+        },
+        method(){
+
+        }     
+    };
+    // filter and map methods
+    // filter works same as forEach 
+    // creates a new array[]
+    // returns true, ==>put value in array
+    //returns false => not put value in array
+    console.log([1,-3,5].filter((value,index)=>{
+        // if we return true means it retuns the value in array
+        // if we return false it will return empty array
+
+        if(value>=0){
+            return true;
+        }else{
+            return false;
+        }
+        return false;
+    }));
+       
+    // Map functions
+    // returns new array[]
+    // whenever we returns added to new Array 
+    // .map()=transforms an array into another array
+    console.log([1,1,3].map((value,index)=>{
+       return value+10;
+    }));
+      </script>
+    </body>
+</html>
