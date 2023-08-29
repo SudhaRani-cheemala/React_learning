@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<p>CSS BASICS</p>
+<button class="button">SUBSCRIBE</button>
+<button class="join-button">JOIN IN THE GIVEN LINK</button>
+<button class="tweet-button">Tweet ON  IT KM</button>
+<a href="https://youtube.com" target="_blank">
+    Link to Youtube
+    </a>
+</a>
+
+<head>
+    <style>
+       .button{
+        background-color: rgb(200, 0,255);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 30px;
+        transition: opacity 1s;
+        margin-left: 20px;
+
+       };
+       .join-button{
+        background-color: red;
+        border-color: rgb(41, 118,211);
+        border-style: solid;
+        border-width: 1px;
+        height: 36px;
+        color: blue;
+        width: 60px;
+        margin-right: 20px;
+        transition: background-color 1s;
+       }
+       .tweet-button{
+        background-color: rgb(2,137,255);
+        color: white;
+        border: none;
+        height: 36px;
+        width:70px;
+        /* border radius should be half the height then only round shape will come */
+        border-radius: 18px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size:15px;
+        transition: background-color 1s;
+        /* box-shadow: 10px 10px 10px yellow; */
+        padding-bottom: 20px;
+       };
+       .button:hover{
+
+        background-color: green;
+        opacity: 0.7;
+
+       }
+       .button:active{
+        background-color: blue;
+       }
+
+       .tweet-button:hover{
+        background-color: red;
+        opacity: 0.7;
+       }
+       .tweet-button:active{
+        background-color: yellow;
+       }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
